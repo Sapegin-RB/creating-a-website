@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Сайт</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Дизайнерский водоворот</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container my-4">
+
+        <!-- Секция 1: Слайдер -->
+        <section id="slider" class="mb-4">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Помещение_1.jpg" class="d-block w-100" alt="Фото 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Помещение_2.jpg" class="d-block w-100" alt="Фото 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Помещение_3.jpg" class="d-block w-100" alt="Фото 3">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Секция 2: Карточки -->
+        <section id="cards" class="mb-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="card">
+                        <img src="Унитаз.jpg" class="card-img-top" alt="Карточка 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Умный унитаз P-trap 180.mm</h5>
+                            <p class="card-text">Умный унитаз представляет собой совершенное сочетание стиля, комфорта и инновационных функций.
+Импульсный смыв, который не требует отдельного бачка для смыва, обеспечивает эффективное использование воды.</p>
+                            <a href="#" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="card">
+                        <img src="Комплект_мебели_Kerasan.jpg" class="card-img-top" alt="Карточка 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Комплект мебели Kerasan Retro 7363K4 цвет черный глянцевый</h5>
+                            <p class="card-text">Комплект мебели Kerasan коллекции Retro из дерева, покрытая лаком. Комплект состоит из: тумбы-консоли с 1 выдвижным ящиком с разделителями, раковины шириной 100 см, зеркала в раме (7364). Цвет тумбы-черный глянцевый, ножки золото, ручки с кристаллами Swarovski, ободки ручек золото</p>
+                            <a href="#" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="card">
+                        <img src="Ванна_чугунная_Magliezza.jpg" class="card-img-top" alt="Карточка 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Ванна чугунная Magliezza Julietta br 183х78 на ножках белый/бронза</h5>
+                            <p class="card-text">Ванна чугунная. Производство - Италия. Длина - 183 см. Ширина - 78 см. Высота - 78 см. Материал - чугун. Цвет - белый. Ножки - бронза.</p>
+                            <a href="#" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция 3: Аккордеон -->
+        <section id="accordion-section" class="mb-4">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Унитазы
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Умный унитаз
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Мебель
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            Комплекты мебели
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Ванны
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            Отдельностоящие ванны из чугуна
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p>Контактная информация: sapeginskal@mail.ru | Телефон: +7 923 393 73 95</p>
+        <p>Следите за нами:
+            <a href="#" class="text-white ml-2"><i class="fab fa-rutube"></i> rutube</a>
+            <a href="#" class="text-white ml-2"><i class="fab fa-vk"></i> ВКонтакте</a>
+            <a href="#" class="text-white ml-2"><i class="fab fa-Telegram"></i> Telegram</a>
+        </p>
+    </footer>
+
+    <!-- Подключение Bootstrap и JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
